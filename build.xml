@@ -87,4 +87,9 @@
         <mkdir dir="coverage-reports" />
         <cobertura-report format="html" destdir="coverage-reports" srcdir="src" />
     </target>
+
+    <!-- Randoop -->
+    <target name="randoop" description="Generate tests with Randoop">
+    
+    </target>
 </project>
