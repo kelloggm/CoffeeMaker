@@ -102,6 +102,7 @@
 	<arg value="--testclass=edu.ncsu.csc326.coffeemaker.Inventory" />
 	<arg value="--time-limit=30" />
 	<arg value="--flaky-test-behavior=DISCARD" />
+	<arg value="--junit-output-dir=randoop-tests" />
       </java>
     </target>
 
@@ -115,6 +116,8 @@
 	<arg value="edu.ncsu.csc326.coffeemaker.Inventory" />
 	<arg value="-projectCP" />
 	<arg value="bin" />
+	<arg value="-base_dir" />
+	<arg value="evosuite-tests" />
       </java>
     </target>
 </project>
