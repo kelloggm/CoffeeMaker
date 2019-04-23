@@ -104,4 +104,17 @@
 	<arg value="--flaky-test-behavior=DISCARD" />
       </java>
     </target>
+
+        <!-- Evosuite -->
+    <target name="evosuite" description="Generate tests with Evosuite">
+      <antcall target="clean" />
+      <antcall target="compile" />
+      <java jar="lib/evosuite-1.0.6.jar"
+	    fork="true">
+	<arg value="-class" />
+	<arg value="edu.ncsu.csc326.coffeemaker.Inventory" />
+	<arg value="-projectCP" />
+	<arg value="bin" />
+      </java>
+    </target>
 </project>
