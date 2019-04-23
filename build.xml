@@ -116,8 +116,6 @@
 	<arg value="edu.ncsu.csc326.coffeemaker.Inventory" />
 	<arg value="-projectCP" />
 	<arg value="bin" />
-	<arg value="-base_dir" />
-	<arg value="evosuite-tests" />
       </java>
     </target>
 </project>
