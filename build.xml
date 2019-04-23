@@ -90,6 +90,18 @@
 
     <!-- Randoop -->
     <target name="randoop" description="Generate tests with Randoop">
-    
+      <antcall target="clean" />
+      <antcall target="compile" />
+      <java classname="randoop.main.Main"
+	    fork="true">
+	<classpath>
+	  <pathelement location="lib/randoop-all-4.1.2.jar" />
+	  <pathelement location="bin/" />
+	</classpath>
+	<arg value="gentests" />
+	<arg value="--classlist=classlist" />
+	<arg value="--time-limit=30" />
+	<arg value="--flaky-test-behavior=DISCARD" />
+      </java>
     </target>
 </project>
