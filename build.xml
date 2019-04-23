@@ -99,7 +99,7 @@
 	  <pathelement location="bin/" />
 	</classpath>
 	<arg value="gentests" />
-	<arg value="--classlist=classlist" />
+	<arg value="--testclass=edu.ncsu.csc326.coffeemaker.Inventory" />
 	<arg value="--time-limit=30" />
 	<arg value="--flaky-test-behavior=DISCARD" />
       </java>
